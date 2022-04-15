@@ -36,7 +36,7 @@ result_file = "Wres120_15_35_2_2_5_depth6_gradLr.txt"
 optimizer = torch.optim.Adam([{'params': model.parameters(), 'lr': 1e-4}])
 
 def adjust_learning_rate_list(optimizer, epoch):
-    lr_set_list = [[1,1e-4],[2,1e-4],[3,1e-5],[4,1e-6],[5,1e-7]] 
+    lr_set_list = [[1,1e-4],[2,5e-5],[3,1e-5],[4,1e-6],[5,1e-7]] 
     lr_list = []
     for i in lr_set_list:
         for j in range(i[0]):
